@@ -3,13 +3,13 @@
 'use strict';
 
 var program = require('commander');
-//var shp = require('./lib/shp');
+var shp = require('./lib/shp');
 
 program
   .version('1.0.0')
-	.option('-s, --shapefile', 'Shapefile')
-	.option('-h, --host', 'ElasticSearch host')
-	.option('-p','--port', 'ElasticSearch port')
+	.option('-s, --shapefile <s>', 'Shapefile')
+	.option('-h, --host <h>', 'ElasticSearch host')
+	.option('-p ,--port <p>', 'ElasticSearch port', parseInt)
 	.parse(process.argv);
 
 	if (program.shapefile === undefined ||
@@ -18,12 +18,9 @@ program
 		usage();
 		return;
 	} else {
-	  console.log('This is where all the magic happens');
-		//console.log(shp.read(program.shapefile));
+		shp.read(program.shapefile, program.host, program.port);
+		return;
 	}
-
-console.log('Loading shapefile: ' + program.shapefile);
-
 
 
 function usage() {

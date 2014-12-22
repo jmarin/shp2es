@@ -36,7 +36,9 @@
 	},
 	"dependencies": {
 		"commander": "^2.5.1",
-	  "shapefile": "^0.3.0"
+	  "shapefile-stream": "^0.0.2",
+		"through2": "^0.6.3",
+		"elasticsearch": "^3.0.2"
 	},
 	"keyworkds": "ElasticSearch, Shapefile",
 	"preferGlobal": "true",
