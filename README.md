@@ -16,5 +16,5 @@ npm install
 
 Usage:
 ```bash
-shp2es -s <shapefile> -h <ElasticSearch host> -p <ElasticSearch port>
+node shp2es.js -s <shapefile> -h <ElasticSearch host> -p <ElasticSearch port>
 ```
