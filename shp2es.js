@@ -1,4 +1,4 @@
-#!/Users/marinj/homebrew/bin/node
+#!/usr/bin/env node
 
 'use strict';
 
