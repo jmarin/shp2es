@@ -19,11 +19,11 @@ if(!program.shapefile || !program.shapefile.match(/\.shp$/i)){
 }
 
 if(!program.host){
-  errorText += 'Must provide an elasticsearch host';
+  errorText += 'Must provide an elasticsearch host.\n';
 }
 
 if(!program.port || program.port < -1 || program.port > 65536){
-  errorText += 'Must provide a port number between 0 and 65535';
+  errorText += 'Must provide a port number between 0 and 65535.\n';
 }
 
 
